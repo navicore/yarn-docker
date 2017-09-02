@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:8-alpine
 
-RUN npm install -g yarn
+RUN apk update && apk upgrade && npm install -q -g yarn
 
